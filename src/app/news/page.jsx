@@ -31,7 +31,7 @@ export default function NewsPage() {
         >
           <div className="h-64 overflow-hidden md:h-80">
             <img
-              src={"/image.jpg"}
+              src={"/logoo.jpg"}
               alt={featuredNews.title}
               className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
             />
@@ -70,7 +70,7 @@ export default function NewsPage() {
         {/* News Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {otherNews.map((item) => (
-            <Link
+            <div
               key={item.id}
               href={`/news/${item.id}`}
               className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
@@ -95,12 +95,12 @@ export default function NewsPage() {
                 <p className="mt-3 line-clamp-2 text-sm leading-6 text-gray-500">
                   {item.description}
                 </p>
-
-                <div className="mt-5 text-sm font-medium text-blue-600">
+                {/* 
+                <div className="mt-5 text-sm font-medium text-emerald-600">
                   اقرأ المزيد ←
-                </div>
+                </div> */}
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

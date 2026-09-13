@@ -3,7 +3,7 @@ import PlayerSearch from "@/components/shared/PlayerSearch";
 
 export default function Home() {
   return (
-    <div className="flex  items-start">
+    <div className="lg:flex  items-start">
       <PlayerSearch />
       <MainLogo />
     </div>
